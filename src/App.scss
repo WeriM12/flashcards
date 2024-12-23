@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Lexend:wght@100..900&family=Mountains+of+Christmas:wght@400;700&display=swap');
+@import 'styles/variables.scss';
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: $white;
+  
+  .sidemaincontainer {
+    display: flex;
+    width: max(69rem, 69vw);
+    height: fit-content;
+    padding: 4rem 0 6rem 0;
+    
+  
+  }
+  
+}
+

@@ -1,0 +1,51 @@
+
+App
+
+-Sidebar
+--Header
+--Nav
+---Learn
+---Progress
+---About
+---Add
+
+-Main
+
+--(Learn)
+---LeftContainer
+----FlashcardCats for today
+----Learn new flashcards
+---RightContainer
+---- ___
+
+--(Progress)
+---LeftContainer
+----FlashcardsContainer
+-----FlashcardCat
+----- ...
+---RightContainer
+----StatsContainer
+-----Stat
+----- ...
+
+--(About)
+---LeftContainer
+----AboutContainer
+---RightContainer
+---- ___
+
+--(Add)
+---LeftContainer
+----FlashcardsContainer
+-----Flashcard
+----- ...
+---RightContainer
+----StatsContainer
+-----Stat
+----- ...
+
+
+-Footer
+--Links
+---Link
+--- ...

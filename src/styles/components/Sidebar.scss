@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Lexend:wght@100..900&family=Mountains+of+Christmas:wght@400;700&display=swap');
+@import '../variables.scss';
+
+.sidebar {
+    width: fit-content;
+    height: min(60rem, 70vh);
+    background-color: $white;
+    position: fixed;
+
+    .header {
+        width: 100%;
+        padding: $size1 3rem;
+        font-family: "Chicle", serif;
+        font-size: 2rem;
+        letter-spacing: 3px;
+    }
+
+    .nav-links {
+        padding: $size2 $size3;
+        color: $black;
+        display: flex;
+        flex-direction: column;
+        gap: $size2;
+  
+            
+        a {
+            text-decoration: none;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            color: $black;
+            font-size: $size2 * 1.38197;
+            font-weight: 900;
+            border: 3px solid transparent;
+            transition: all 0.2s;
+            border-radius: $size2;
+            padding: .5rem 1rem;
+
+            &:hover {
+                background-color: rgba($color1, 0.2);
+                
+            }
+        }
+
+        .selected {
+            border: 3px solid rgba($color1, 0.6);
+            background-color: rgba($color1, 0.1);
+        }
+            
+        
+
+        
+    }
+}

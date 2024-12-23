@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Lexend:wght@100..900&family=Mountains+of+Christmas:wght@400;700&display=swap');
+@import '../variables.scss';
+
+
+.main {
+    width: 100%;
+    background-color: rgba($color1, 0.4);
+    border-radius: $size3;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: fit-content;
+    min-height: 75vh;
+    margin-left: 20rem;
+    
+
+    .learn {
+
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: $size2;
+        
+        
+
+        h2 {
+            
+            font-size: $size3;
+            font-weight: 800;
+        }
+
+        .update {
+            padding: 2rem;
+            height: calc(33.333% - 1.333333rem);
+            background-color: $white;
+            border-radius: $size2;
+            display: flex;
+            
+            justify-content: space-between;
+            border: 3px solid rgba($color1, 0.6);
+            
+            div {
+                width: 70%;
+                height: 100%;
+
+                h3 {
+                    width: fit-content;
+                    letter-spacing: 0;
+                    font-size: $size3;
+                    font-weight: 800;
+                    color: $black;
+                    transition: all 0.3s;
+                    
+                }
+
+                p {
+                    height: 100%;
+                    font-size: $size2;
+                    font-weight: 700;
+                }
+            }
+
+            button {
+                
+                background-color: transparent;
+                border: 4px solid rgba($color1, 0.6);
+                cursor: pointer;
+                border-radius: 50%;
+                transition: all 0.3s, transform 0.15s;
+                position: relative;
+                height: 4rem;
+                width: 4rem;
+                padding: 2rem;
+                box-shadow: 0 5px 1px 0 rgba($black, 0.4);
+
+                &:hover {
+                    background-color: rgba($color1, 0.2);
+                    
+                    
+                }
+
+                &:active {
+                    transform: translateY(5px);
+                    
+                    box-shadow: 0 5px 1px 0 rgba($black, 0);
+                }
+
+                span {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 3rem;
+                }
+
+            }
+        }
+
+        
+    }
+
+    .categories-list {
+        color: $black;
+        
+
+
+        .categories-container {
+
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin-top: 1rem;
+            gap: $size3;
+
+            .category {
+                width: calc(50% - 1rem);
+                padding: 2rem;
+                border-radius: $size2;
+                height: $size3 * 6;
+                font-size: $size3;
+                letter-spacing: -1px;
+                position: relative;
+
+                h3 {
+                    font-weight: 900;
+                    font-size: $size3;
+                }
+
+                button {
+                    border: none;
+                    background-color: transparent;
+                    position: absolute;
+                    bottom: $size2;
+                    right: $size2;
+                    font-size: $size3;
+                    font-family: $fontmain;
+                    font-weight: 900;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    gap: .5rem;
+                    transition: all 0.3s;
+                    cursor: pointer;
+                    
+
+                    &:hover {
+                        transform: translateX(5px);
+                    }
+                }
+            }
+
+        }
+
+        
+    }
+}

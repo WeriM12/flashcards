@@ -1,0 +1,62 @@
+{
+    "categories": [
+      {
+        "id": 1,
+        "name": "Programming and learning how to do fishing",
+        "color": "#FF5733",
+        "flashcards": [
+          {
+            "id": 101,
+            "question": "What is a variable?",
+            "answer": "A variable is a storage location paired with an associated symbolic name that contains some known or unknown quantity of information."
+            
+          },
+          {
+            "id": 102,
+            "question": "What does 'const' mean in JavaScript?",
+            "answer": "'const' declares a block-scoped variable that cannot be reassigned after it is initialized."
+            
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Math",
+        "color": "#33A1FF",
+        "flashcards": [
+          {
+            "id": 201,
+            "question": "What is the Pythagorean Theorem?",
+            "answer": "In a right triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides."
+            
+          },
+          {
+            "id": 202,
+            "question": "What is the derivative of x^2?",
+            "answer": "The derivative of x^2 is 2x."
+            
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Science",
+        "color": "#9B59B6",
+        "flashcards": [
+          {
+            "id": 301,
+            "question": "What is Newton's First Law?",
+            "answer": "An object in motion stays in motion, and an object at rest stays at rest, unless acted upon by an external force."
+            
+          },
+          {
+            "id": 302,
+            "question": "What is the chemical symbol for water?",
+            "answer": "H2O"
+            
+          }
+        ]
+      }
+    ]
+  }
+  
