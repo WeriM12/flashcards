@@ -1,4 +1,16 @@
 
+
+Flashcards
+-flashcards-app 
+-flashcats
+-flashcards-api
+
+
+
+
+
+
+
 App
 
 -Sidebar
