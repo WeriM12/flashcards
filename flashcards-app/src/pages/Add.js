@@ -6,24 +6,27 @@ import '../styles/components/Main.scss';
 function Add() {
     return (
         <div className="add">
-            <h1>Add page</h1>
+            <h2>Add new flashcards</h2>
             <div className="content">
-                <div>
+                <div className="form-container">
                     <div className="category-form">
+                        <h3>Category</h3>
                         <form>
-                            <input type="text" placeholder="Category title"></input>
+                            
+                            <input type="text" placeholder="Title"></input>
                             <div className="inline">
                                 <label>Color theme: </label>
-                                <input type="color"></input>
+                                <input type="color" value="#abcdef"></input>
                         
                             </div>
                         </form> 
                     </div>
                     <div className="card-form">
+                        <h3>Card</h3>
                         <form>
-                            <input type="text" placeholder="Card question"></input>
-                            <textarea rows="3" placeholder="Card answer"></textarea>
-                            <button type="submit">Next</button>
+                            <input type="text" placeholder="Question"></input>
+                            <textarea rows="3" placeholder="Answer"></textarea>
+                            <button className="submit" type="submit">Next</button>
                         </form>
                     </div>
                 </div>

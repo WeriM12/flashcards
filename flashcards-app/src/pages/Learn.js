@@ -11,7 +11,7 @@ function Learn() {
         <div className="learn">
             <Update buttonClass={'recent-cathegory'} route="/continue-learning" title={"Continue learning..."} paragraph={"Start learning exactly where you left previously."} />
             
-            <CategoriesList />
+            <CategoriesList title={"Your categories"} />
         </div>
         
     )

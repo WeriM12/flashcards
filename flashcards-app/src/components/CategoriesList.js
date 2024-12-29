@@ -28,7 +28,7 @@ function CategoriesList({ buttonClass, title, paragraph, route }) {
 
   return (
     <div className="categories-list">
-      <h2>Saved categories</h2>
+      <h2>{title}</h2>
       <div className='categories-container'>
         {categories.map((category) => (
             <div key={category.id} className='category' style={{backgroundColor: category.color}}>
