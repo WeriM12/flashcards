@@ -1,0 +1,27 @@
+@use './var';
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Lexend:wght@100..900&family=Mountains+of+Christmas&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
+
+
+// FONTS: Lexend, Chicle, Quicksand, Nunito
+
+/* Global reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var.$black;
+  
+}
+
+html {
+  font-size: 16px;
+  overflow-y: scroll;
+  color: var.$black;
+}
+
+body {
+  font-family: "Nunito", Arial, sans-serif;
+}
+

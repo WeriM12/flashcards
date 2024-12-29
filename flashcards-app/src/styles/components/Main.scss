@@ -1,0 +1,252 @@
+@use '../var';
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Lexend:wght@100..900&family=Mountains+of+Christmas:wght@400;700&display=swap');
+
+
+
+.main {
+    width: 100%;
+    background-color: rgba(var.$color1, 0.4);
+    border-radius: var.$size3;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: fit-content;
+    min-height: 75vh;
+    margin-left: 20rem;
+    
+
+    .learn {
+
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: var.$size2;
+        
+        
+
+        h2 {
+            
+            font-size: var.$size3;
+            font-weight: 800;
+        }
+
+        .update {
+            padding: 2rem;
+            height: calc(33.333% - 1.333333rem);
+            background-color: var.$white;
+            border-radius: var.$size2;
+            display: flex;
+            
+            justify-content: space-between;
+            border: 3px solid rgba(var.$color1, 0.6);
+            
+            div {
+                width: 70%;
+                height: 100%;
+
+                h3 {
+                    width: fit-content;
+                    letter-spacing: 0;
+                    font-size: var.$size3;
+                    font-weight: 800;
+                    color: var.$black;
+                    transition: all 0.3s;
+                    
+                }
+
+                p {
+                    height: 100%;
+                    font-size: var.$size2;
+                    font-weight: 700;
+                }
+            }
+
+            button {
+                
+                background-color: transparent;
+                border: 4px solid rgba(var.$color1, 0.6);
+                cursor: pointer;
+                border-radius: 50%;
+                transition: all 0.3s, transform 0.15s;
+                position: relative;
+                height: 4rem;
+                width: 4rem;
+                padding: 2rem;
+                box-shadow: 0 5px 1px 0 rgba(var.$black, 0.4);
+
+                &:hover {
+                    background-color: rgba(var.$color1, 0.2);
+                    
+                    
+                }
+
+                &:active {
+                    transform: translateY(5px);
+                    
+                    box-shadow: 0 5px 1px 0 rgba(var.$black, 0);
+                }
+
+                span {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 3rem;
+                }
+
+            }
+        }
+
+        
+    }
+
+    .categories-list {
+        color: var.$black;
+        
+
+
+        .categories-container {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            
+            margin-top: 1rem;
+            gap: var.$size3;
+
+            .category {
+                width: 100%;
+                height: var.$size3 * 7;
+                padding: 1.3rem 2rem;
+                border-radius: var.$size2;
+                
+                font-size: var.$size3;
+                text-transform: uppercase;
+                letter-spacing: -1px;
+
+                a {
+                    border: none;
+                    background-color: transparent;
+                    
+                    font-size: var.$size2 * 1.5;
+                    font-weight: 900;
+                    
+                    
+                    transition: all 0.3s;
+                    cursor: pointer;
+                    
+
+                    &:hover {
+                        transform: translateX(5px);
+                    }
+                }
+            }
+
+        }
+
+        
+    }
+
+    .add {
+
+        h1 {
+            font-weight: 900;
+        }
+        
+        .content {
+            height: 100%;
+            display: flex;
+
+            div {
+                padding: 2rem 1rem;
+            }
+            .card-list {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 1rem;
+                max-height: 100%;
+                overflow-y: scroll;
+                
+                .card {
+                    width: 30%;
+                    height: 30%;
+                    background-color: rgba(var.$white, 0.6);
+                    border-radius: .5rem;
+                }
+                
+            }
+
+            .category-form {
+                height: fit-content;
+                
+                padding: 2rem;
+                border-radius: var.$size2;
+                
+            }
+
+            .card-form, .category-form {
+                display: flex; 
+                padding: 2rem 0;
+                
+                form {
+
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+
+
+                    input[type="text"], textarea {
+                        outline: none;
+                        padding: var.$size1;
+                        border-radius: var.$size1;
+                        font-size: large;
+                        font-family: var.$fontmain;
+                        font-weight: 800;
+                        border: none;
+                        width: 20rem;
+
+                    }
+
+                    textarea {
+                        resize: none;
+                    }
+
+                    input[type="color"] {
+                        border: none;
+                        width: 60%;
+                        height: 30px;
+                        cursor: pointer;
+                        padding: 0;
+                        background: none;
+                        border-radius: 1rem;
+                      }
+                    
+                      input[type="color"]::-webkit-color-swatch-wrapper {
+                        padding: 0;
+                        border-radius: 1rem;
+                      }
+                    
+                      input[type="color"]::-webkit-color-swatch {
+                        border: none;
+                        border-radius: 1rem;
+                      }
+
+                    .inline {
+                        padding: 0 .5rem;
+                        display: flex;
+                        align-items: center;
+                        font-size: 1rem;
+                        font-weight: 800;
+                        gap: 1rem;
+                        margin: 0;
+                    }
+
+
+                }
+            }
+        }
+
+        
+    }
+}

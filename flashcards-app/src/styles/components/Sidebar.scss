@@ -1,0 +1,63 @@
+@use '../var';
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Lexend:wght@100..900&family=Mountains+of+Christmas:wght@400;700&display=swap');
+
+// FONTS: Lexend, Chicle, Quicksand, Nunito
+
+.sidebar {
+    width: fit-content;
+    height: min(60rem, 70vh);
+    background-color: transparent;
+
+    position: fixed;
+
+    .header {
+        width: 100%;
+        padding: var.$size1 3rem;
+        font-family: "Lexend", serif;
+        font-weight: 900;
+        font-size: 1.5rem;
+        letter-spacing: -7px;
+    }
+
+    .nav-links {
+        padding: var.$size2 var.$size3;
+        color: var.$black;
+        display: flex;
+        flex-direction: column;
+        gap: var.$size2;
+  
+            
+        a {
+            text-decoration: none;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: var.$black;
+            font-size: var.$size2 * 1.38197;
+            font-weight: 900;
+            border: 3px solid transparent;
+            
+            border-radius: var.$size2;
+            padding: .5rem 1rem;
+
+            span {
+                font-size: 2rem;
+            }
+
+            &:hover {
+                background-color: rgba(var.$color1, 0.2);
+                
+            }
+        }
+
+        .selected {
+            border: 3px solid rgba(var.$color1, 0.6);
+            background-color: rgba(var.$color1, 0.1);
+        }
+            
+        
+
+        
+    }
+}
